@@ -20,9 +20,9 @@ class Counter extends React.Component {
 
   render() {
     return (
-      <div class='counter'>
-        <h4 class={this.state.counter < 0 ? 'negative' : this.state.counter === 0 ? 'neutral' : 'positive'}>{this.state.counter}</h4>
-        <div class="counter container">
+      <div className='counter'>
+        <h4 className={this.state.counter < 0 ? 'negative' : this.state.counter === 0 ? 'neutral' : 'positive'}>{this.state.counter}</h4>
+        <div className="counter container">
           <button id='inc' onClick={this.handleButtonClick}>Increment</button>
           <button id='dec' onClick={this.handleButtonClick}>Decrement</button>
         </div>

@@ -1,0 +1,62 @@
+$background-color: #222;
+$accent-color: #0F7;
+
+body {
+  background-color: $background-color;
+  color: $accent-color;
+  header {
+    h1 {
+      text-align: center;
+      font-size: 10vw;
+    }
+  }
+  
+  div .counter {
+    text-align: center;
+    h4 {
+      font-size: 5vw;
+      text-shadow: 5px 5px 10px #F00, -5px -5px 10px #0F0, -5px 5px 10px #00F, 5px -5px 10px #FFF;
+    }
+    h4.positive {
+      color: #0F0;
+    }
+    h4.neutral {
+      color: yellow;
+    }
+    h4.negative {
+      color: #F00;
+    }
+    button {
+      text-align: center;
+      border: none;
+      font-size: 5vw;
+      background-color: $background-color;
+      color: $accent-color;
+      border-radius: 15px;
+      padding: 5%;
+      text-shadow: 0 0 10px #000;
+    }
+    button:hover {
+      background-color: #0F0F0F;
+      color: $accent-color;
+      text-shadow: 0 0 5px $accent-color;
+    }
+    
+    .container {
+      justify-content: space-evenly;
+      display: flex;
+      padding: 5% 0;
+      background-color: #1A1A1A;
+      border: 5px solid $accent-color;
+    }
+  }
+  
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+}
+
